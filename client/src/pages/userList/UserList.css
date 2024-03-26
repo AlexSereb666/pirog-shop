@@ -1,0 +1,44 @@
+.user-list {
+    padding: 50px;
+}
+
+.user-list-list {
+    overflow-y: auto;
+    max-height: 80%;
+}
+
+.user-list-list-item {
+    display: flex;
+    background-color: rgba(113, 70, 114, 0.26);
+    box-shadow: 0 0 50px rgba(170, 39, 187, 0.089);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 99%;
+    padding: 10px;
+    height: 70px;
+}
+
+.user-list-list-item-login {
+    align-self: center;
+    font-size: 28px;
+    width: 20%;
+}
+
+.user-list-list-item-email {
+    align-self: center;
+    font-size: 28px;
+    width: 25%;
+}
+
+.user-list-list-item-phone {
+    align-self: center;
+    font-size: 28px;
+    width: 25%;
+}
+
+.user-list-list-item-role {
+    align-self: center;
+    margin-left: auto;
+    padding-right: 20px;
+    margin-top: 20px;
+}

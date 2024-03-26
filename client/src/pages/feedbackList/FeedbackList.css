@@ -1,0 +1,56 @@
+.Feedback-list {
+    padding: 50px;
+}
+
+.Feedback-list-item-delete img {
+    width: 30px;
+    height: auto;
+}
+
+.Feedback-list-top {
+    padding-bottom: 20px;
+}
+
+.Feedback-list-list {
+    overflow-y: auto;
+    max-height: 80%;
+}
+
+.Feedback-list-item {
+    display: flex;
+    background-color: rgba(113, 70, 114, 0.26);
+    box-shadow: 0 0 50px rgba(170, 39, 187, 0.089);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 99%;
+    cursor: pointer;
+    height: 50px;
+    padding: 10px;
+}
+
+.Feedback-list-item-name {
+    align-self: center;
+    font-size: 32px;
+    font-weight: bold;
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+.Feedback-list-item:hover {
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+}
+
+.Feedback-list-item-title {
+    align-self: center;
+    font-size: 32px;
+    width: 30%;
+    padding-bottom: 5px;
+}
+
+.Feedback-list-item-date {
+    align-self: center;
+    font-size: 32px;
+    width: 50%;
+    padding-bottom: 5px;
+}

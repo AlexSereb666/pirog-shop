@@ -1,0 +1,230 @@
+@keyframes dropDown {
+  from {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes authZoomIn {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes authZoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
+  }
+}
+@keyframes spinXAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoom_center {
+  from {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  70% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 50px;
+  }
+}
+@keyframes slideInRight {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 50px;
+  }
+}
+@keyframes boomBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes boomBottomSlider {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes opacityObj {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.basket-container {
+  height: 85vh;
+  width: 140vh;
+  padding: 30px 30px;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(65, 23, 54, 0.267);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.342);
+  border-radius: 10px;
+  animation: zoom 1s ease-out;
+}
+.basket-container__products {
+  height: 600px;
+}
+.basket-container__menu {
+  display: flex;
+  margin-top: auto;
+  gap: 20px;
+}
+.basket-container__line {
+  display: flex;
+  background-color: rgba(61, 43, 63, 0.445);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  animation: slideInFromLeft 1s ease-out;
+}
+.basket-container__line__img {
+  margin-left: 10px;
+  pointer-events: none;
+  user-select: none;
+}
+.basket-container__line__img img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid #7e1897;
+  border-radius: 10px;
+}
+.basket-container__line__name {
+  width: 300px;
+  margin-left: 50px;
+  font-size: 42px;
+  align-self: center;
+  pointer-events: none;
+  user-select: none;
+}
+.basket-container__line__rating {
+  width: 50px;
+  margin-left: 50px;
+  font-size: 42px;
+  align-self: center;
+  pointer-events: none;
+  user-select: none;
+}
+.basket-container__line__star {
+  align-self: center;
+  margin-left: 10px;
+  pointer-events: none;
+  user-select: none;
+}
+.basket-container__line__star img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.basket-container__line__price {
+  margin-left: 50px;
+  font-size: 42px;
+  align-self: center;
+  pointer-events: none;
+  user-select: none;
+}
+.basket-container__line__checkbox {
+  align-self: center;
+  margin-left: auto;
+}
+.basket-container__menu {
+  animation: zoom 1s ease-out;
+}
+.basket-container__price {
+  pointer-events: none;
+  user-select: none;
+  font-size: 32px;
+  margin-left: auto;
+  animation: slideInFromLeft 1s ease-out;
+  margin-top: auto;
+}

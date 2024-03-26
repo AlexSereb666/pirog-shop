@@ -1,0 +1,166 @@
+@keyframes dropDown {
+  from {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes authZoomIn {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes authZoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
+  }
+}
+@keyframes spinXAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoom_center {
+  from {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  70% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 50px;
+  }
+}
+@keyframes slideInRight {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 50px;
+  }
+}
+@keyframes boomBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes boomBottomSlider {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.add-info-menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(56, 54, 53, 0.897);
+  border: 1px solid #f8f8f8c5;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+  text-align: center;
+  animation: zoom_center 0.5s forwards;
+  border-radius: 20px;
+  padding-top: 50px;
+  display: grid;
+  gap: 15px;
+  grid-template-rows: repeat(auto-fill, minmax(1fr, auto));
+}
+.add-info-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 26px;
+  color: #fff;
+}
+.add-info-menu__close-btn:hover {
+  color: #E9BEA5;
+}
+.add-info-menu__input {
+  font-size: 24px;
+  color: #322138;
+  background-color: #565458;
+  margin: 10px;
+}
+.add-info-menu__btn-delete {
+  font-size: 24px;
+  color: #947096;
+  background-color: #6b3232;
+  padding: 2px;
+}
+.add-info-menu__container {
+  display: flex;
+  align-items: center;
+}

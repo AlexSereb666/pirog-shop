@@ -1,0 +1,41 @@
+.registration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration__content {
+    width: 550px;
+    background-color: rgba(56, 54, 53, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.445);
+}
+
+.registration__title {
+    font-size: 36px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.registration__register {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    pointer-events: none;
+    user-select: none;
+}
+.registration__register span {
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: underline;
+    pointer-events: all;
+    user-select: all;
+}

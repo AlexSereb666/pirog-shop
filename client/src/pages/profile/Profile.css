@@ -1,0 +1,22 @@
+.profile {
+    padding: 50px;
+}
+
+.profile-title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.profile-description {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    height: 400px;
+}
+
+.profile-contact {
+    font-size: 40px;
+    font-weight: bold;
+}

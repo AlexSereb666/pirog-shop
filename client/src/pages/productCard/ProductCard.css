@@ -1,0 +1,238 @@
+@keyframes dropDown {
+  from {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes authZoomIn {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes authZoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
+  }
+}
+@keyframes spinXAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoom_center {
+  from {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  70% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 50px;
+  }
+}
+@keyframes slideInRight {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 50px;
+  }
+}
+@keyframes boomBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes boomBottomSlider {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes opacityObj {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.product-card {
+  height: 80vh;
+  width: 140vh;
+  padding: 30px 30px;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: opacityObj 1s ease-out;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+.product-card__top {
+  display: flex;
+}
+.product-card__img-product {
+  pointer-events: none;
+  user-select: none;
+  margin-left: 10px;
+  animation: zoom 0.5s ease-out;
+}
+.product-card__img-product__img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid #b9a396;
+  border-radius: 10px;
+}
+.product-card__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 50px;
+  position: relative;
+  pointer-events: none;
+  user-select: none;
+  animation: zoom 0.5s ease-out;
+}
+.product-card__rating__name {
+  font-size: 48px;
+  padding-bottom: 10px;
+}
+.product-card__rating__img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.product-card__rating__num {
+  position: absolute;
+  top: 40%;
+  font-size: 82px;
+  color: #ffffff;
+  text-align: center;
+}
+.product-card__buy {
+  margin-left: 100px;
+  width: 40vh;
+  height: 34vh;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+  border: 3px solid #b9a396;
+  border-radius: 20px;
+  animation: zoom 0.5s ease-out;
+}
+.product-card__buy__price {
+  font-size: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 160px;
+  pointer-events: none;
+  user-select: none;
+}
+.product-card__bottom {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-right: 40px;
+  pointer-events: none;
+  user-select: none;
+  animation: slideInFromLeft 0.5s ease-out;
+}
+.product-card__bottom h3 {
+  font-size: 42px;
+}
+.product-card__bottom__one {
+  font-size: 24px;
+  background: linear-gradient(to right, #7b4192a9, transparent 95%);
+  transition: background 0.5s ease;
+  margin-top: 5px;
+}
+.product-card__bottom__two {
+  font-size: 24px;
+  background: linear-gradient(to right, #9c877cc7, transparent 95%);
+  transition: background 0.5s ease;
+  margin-top: 5px;
+}

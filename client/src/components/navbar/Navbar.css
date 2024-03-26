@@ -1,0 +1,56 @@
+.navbar-container {
+    height: 80px;
+    background-color: #24201da6;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(68, 6, 82, 0.336);
+
+    display: flex;
+}
+
+.navbar-container-choice {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+
+    width: 100%;
+}
+
+.navbar-container-choice-menu,
+.navbar-container-choice-basket,
+.navbar-container-choice-profile,
+.navbar-container-choice-feedback,
+.navbar-container-choice-history,
+.navbar-container-choice-admin {
+    font-size: 22px;
+    align-self: center;
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.navbar-container-logo {
+    padding-right: 2%;
+}
+
+.navbar-container-choice-back {
+    padding-top: 15px;
+    padding-right: 30px;
+    margin-left: auto;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.navbar-container-choice-menu:hover,
+.navbar-container-choice-basket:hover,
+.navbar-container-choice-profile:hover,
+.navbar-container-choice-feedback:hover,
+.navbar-container-choice-history:hover,
+.navbar-container-choice-admin:hover {
+    transform: scale(1.1);
+    color: rgb(184, 34, 184);
+}
+
+.navbar-container-choice-back:hover {
+    color: rgb(184, 34, 184); /* Изменяем цвет на красный при наведении */
+}
