@@ -44,13 +44,14 @@ class productController {
     }
 
     // добавить продукт //
-    async postProduct(req, res, next) {
+    async postProduct(req, res) {
         try {
-            let {name, price, ProductTypeId, count, info} = req.body
+            let {name, price, ProductTypeId, info} = req.body
             const {img} = req.files
+
             let fileName = uuid.v4() + ".jpg" 
             img.mv(path.resolve(__dirname, '..', 'static', fileName))
-            const product = await Product.create({name, price, ProductTypeId, count, img: fileName})
+            const product = await Product.create({name, price, ProductTypeId, img: fileName})
 
             if (info) {
                 info = JSON.parse(info)

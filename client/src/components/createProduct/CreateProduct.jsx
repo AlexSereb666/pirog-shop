@@ -106,6 +106,7 @@ const CreateProduct = ({onClose}) => {
         }
 
         formData.append('info', JSON.stringify(info))
+        //console.log(Array.from(formData.entries()))
         createProduct(formData)
 
         setMessageBoxMessage("Продукт успешно добавлен")
@@ -114,10 +115,10 @@ const CreateProduct = ({onClose}) => {
         setName("")
         setPrice("0")
 
-        setSelectType("")
+        //setSelectType("")
 
         setInfo([])
-        setUploadedImage(null);
+        //setUploadedImage(null);
     }
 
     return (

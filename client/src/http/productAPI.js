@@ -11,6 +11,7 @@ export const fetchTypes = async () => {
 }
 
 export const createProduct = async (product) => {
+    //console.log(Array.from(product.entries()))
     const {data} = await $host.post('api/product', product)
     return data
 }
